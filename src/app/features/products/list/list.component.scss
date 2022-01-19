@@ -1,0 +1,102 @@
+.cima {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.cart, .add {
+  margin-top: 2%;
+  width: 200px;
+  height: 60px;
+}
+
+.cart button, .add button {
+  height: 45px;
+  font-size: 16px;
+  outline: 0;
+  background-color: transparent;
+  border: 1px solid rgb(45, 80, 184);
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.cart button:hover, .add button:hover {
+  transition: all 0.3s;
+  box-shadow: 4px 4px 3px lightgray;
+  background-color: rgb(45, 80, 184);
+  color: white;
+}
+
+.nome h1 {
+  font-size: 35px;
+  color: rgb(45, 80, 184);
+}
+
+.baixo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.produto {
+  background-color: rgb(167, 189, 255);
+  width: 65%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-left: 240px;
+  border-radius: 8px;
+  height: 240px;
+}
+
+.nada {
+  margin-bottom: 40px;
+}
+
+.specs {
+  width: 350px;
+  max-width: 350px;
+}
+
+.imagem {
+  height: 80%;
+  width: 200px;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 4px rgb(126, 140, 184);
+  background-size: cover;
+  max-width: 200px;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.botoes button {
+  height: 30px;
+  width: 90px;
+  font-size: 14px;
+  outline: 0;
+  background-color: rgb(255, 255, 255);
+  color: rgb(33, 76, 206);
+  border: 1px solid rgb(33, 76, 206);
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+
+#price {
+  color: rgb(33, 76, 206);
+}
+
+.botoes button:hover {
+  transition: all 0.3s;
+  background-color: rgb(33, 76, 206);
+  color: white;
+  box-shadow: 3px 3px 4px rgb(126, 140, 184);
+}

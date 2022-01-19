@@ -1,0 +1,42 @@
+.central {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  margin-top: 0%;
+  color: rgb(33, 76, 206);
+}
+
+.texto {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  background-color: transparent;
+}
+
+.image {
+  width: 800px;
+  height: 300px;
+  margin-left: 22%;
+  margin-top: 5%;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.texto {
+  margin-top: -150px;
+  padding: 0;
+  color: rgb(43, 72, 158);
+}
+
+h1 {
+  font-size: 230px;
+}
+
+h2 {
+  color: rgb(33, 76, 206);
+  font-size: 32px;
+}

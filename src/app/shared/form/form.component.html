@@ -1,0 +1,14 @@
+<br><br><br><br><br><br><br><br><form [formGroup]="formEntity">
+  <h1>Put the informations below: </h1>
+  <div *ngFor="let value of keys">
+    <label [for]="value">{{ value }}:</label>
+    <br />
+    <input type="text" [placeholder]="value" [formControlName]="value" [id]="value" />
+    <br />
+  </div>
+  <div class="botoes">
+    <button type="button" (click)="onSubmit()">Send</button>
+    <br>
+    <button type="button" (click)="goBack()">Back</button>
+  </div>
+</form>
