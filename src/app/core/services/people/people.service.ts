@@ -11,15 +11,15 @@ export class PeopleService {
 
   constructor(private http: HttpClient) { }
 
-  baseProductUrl = `${environment.baseUrl}/people`;
+  basePersonUrl = `${environment.baseUrl}/people`;
   private _people = new Subject<Person>();
 
   allPeople() {
-    return this.http.get<Person[]>(this.baseProductUrl);
+    return this.http.get<Person[]>(this.basePersonUrl);
   }
 
   getPersonById(id) {
-    return this.http.get<Person>(`${this.baseProductUrl}/${id}`);
+    return this.http.get<Person>(`${this.basePersonUrl}/${id}`);
   }
 
   getPeople() {
@@ -27,14 +27,14 @@ export class PeopleService {
   }
 
   deletePerson(id) {
-    return this.http.delete(`${this.baseProductUrl}/${id}`);
+    return this.http.delete(`${this.basePersonUrl}/${id}`);
   }
 
   upsertperson(person: Person) {
     if (person.id) {
-      return this.http.patch(`${this.baseProductUrl}/${person.id}`, person);
+      return this.http.patch(`${this.basePersonUrl}/${person.id}`, person);
     } else {
-      return this.http.post(this.baseProductUrl, person);
+      return this.http.post(this.basePersonUrl, person);
     }
   }
 

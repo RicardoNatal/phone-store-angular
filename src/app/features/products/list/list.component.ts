@@ -1,3 +1,4 @@
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { ProductsService } from './../../../core/services/products/products.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Component, Input, OnInit, Output } from '@angular/core';
@@ -21,7 +22,8 @@ export class ListComponent implements OnInit {
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private productService: ProductsService,
-    private cartService: CartService
+    private cartService: CartService,
+    private snack: MatSnackBar
   ) {}
 
   ngOnInit(): void {
@@ -39,7 +41,7 @@ export class ListComponent implements OnInit {
   addToCart(value: Product, price: string) {
     this.cartService.addToCart(value)
     this.cartService.values(Number(price))
-    console.log(this.cartService.getItems)
+    this.snack.open("Produto adicionado ao carrinho", "OK")
   }
 
   private setProducts(products) {

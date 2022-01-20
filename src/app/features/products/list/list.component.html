@@ -3,9 +3,9 @@
     <div class="add">
       <button (click)="goToAdd()">Adicionar produto</button>
     </div>
-    <div class="nome"><h1>PHONEFIX</h1></div>
+    <div class="nome"><h1>Products</h1></div>
     <div class="cart"><button (click)="goToCart()">Carrinho</button></div>
-  </div>
+  </div><hr>
   <div class="baixo">
     <div class="produto" *ngFor="let value of products">
       <img class="imagem" [src]="value.imageUrl">

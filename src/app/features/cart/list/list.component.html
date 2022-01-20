@@ -1,1 +1,55 @@
-{{ value }}
+<div class="total">
+  <div class="cima">
+    <div class="add">
+      <button (click)="goToProducts()">Voltar aos produtos</button>
+    </div>
+    <div class="nome"><h1>Carrinho</h1></div>
+    <div class="cart">
+      <button (click)="clearCart()">Finalizar compra</button>
+    </div>
+  </div>
+  <hr />
+  <div class="baixo">
+    <h1>{{ listLabel }}</h1>
+    <div class="finalizar">
+      <div class="formaPgto">
+        <h3>Forma de pagamento:</h3>
+        <select>
+          <option *ngFor="let option of options">{{ option }}</option>
+        </select>
+      </div>
+      <div class="cep">
+        <h3>CEP:</h3>
+        <input
+        (keyup.enter)="guardarValor($event)"
+          type="text"
+          placeholder="cep"
+        /><button id="botaoCep" (click)="openDialog()">Address</button>
+      </div>
+      <div class="valorFinal">
+        <h2>{{ value | currency: "BRL" }}</h2>
+      </div>
+      <div class="terminarCompra">
+        <h3>Cliente:</h3>
+        <select>
+          <option *ngFor="let person of people">{{ person.name }}</option>
+        </select>
+      </div>
+    </div>
+    <br /><br />
+    <div class="produto" *ngFor="let value of products">
+      <img class="imagem" [src]="value.imageUrl" />
+      <div class="specs">
+        <div class="titles">
+          <h3>{{ value.name }}</h3>
+          <h3 id="price">R$: {{ value.price }}</h3>
+        </div>
+        <div class="resto">
+          <p>{{ value.departament }}</p>
+          <p>{{ value.comment }}</p>
+        </div>
+      </div>
+      <div class="botoes"></div>
+    </div>
+  </div>
+</div>

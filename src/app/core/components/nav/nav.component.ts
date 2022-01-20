@@ -22,7 +22,7 @@ export class NavComponent implements OnInit {
   }
 
   goToAboutUs() {
-    this.router.navigate(['home'])
+    this.router.navigate(['about-us'])
 
   }
 

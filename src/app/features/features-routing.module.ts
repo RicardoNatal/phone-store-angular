@@ -21,6 +21,11 @@ const routes: Routes = [
       import('./people/people.module').then((p) => p.PeopleModule),
   },
   {
+    path: 'about-us',
+    loadChildren: async () =>
+      import('./aboutus/aboutus.module').then((a) => a.AboutusModule),
+  },
+  {
     path: 'home',
     component: HomeComponent,
   },
