@@ -3,10 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { AboutusRoutingModule } from './aboutus-routing.module';
 import { ScreenComponent } from './screen/screen.component';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {MatNativeDateModule} from '@angular/material/core';
-import {HttpClientModule} from '@angular/common/http';
-import {MatCardModule} from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [ScreenComponent],
@@ -15,7 +14,7 @@ import {MatCardModule} from '@angular/material/card';
     AboutusRoutingModule,
     MatCardModule,
     FormsModule,
-    MatNativeDateModule
+    MatNativeDateModule,
   ],
 })
 export class AboutusModule {}

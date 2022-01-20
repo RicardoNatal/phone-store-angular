@@ -45,7 +45,6 @@ export class ListComponent implements OnInit {
     this.dialog.open(AddressComponent);
   }
 
-
   ngOnInit(): void {
     this.products = this.cartService.getItems();
     this.value = this.cartService.getValue();
@@ -55,8 +54,9 @@ export class ListComponent implements OnInit {
 
     let hasProducts = Boolean(this.products.length);
 
-    this.listLabel = hasProducts ? 'Produtos selecionados: ' : 'Nenhum produto selecionado ainda: '
-
+    this.listLabel = hasProducts
+      ? 'Produtos selecionados: '
+      : 'Nenhum produto selecionado ainda: ';
   }
 
   viacepCatch(cep) {
@@ -70,8 +70,8 @@ export class ListComponent implements OnInit {
     if (cep) {
       if (cep.length == 8) {
         this.viacepCatch(cep);
-          this.snack.open('CEP cadastrado sucesso!', 'OK');
-        } else {
+        this.snack.open('CEP cadastrado sucesso!', 'OK');
+      } else {
         if (cep.length < 8) {
           this.snack.open('O CEP inserido é curto demais!', 'OK');
         } else if (cep.length > 8) {
@@ -87,7 +87,7 @@ export class ListComponent implements OnInit {
     this.products = this.setProducts(this.cartService.clearCart());
     this.value = 0;
     this.snack.open('Compra efetuada com sucesso!', 'OK');
-    this.listLabel = 'Obrigado por escolher a nossa loja!'
+    this.listLabel = 'Obrigado por escolher a nossa loja!';
     return this.products;
   }
 

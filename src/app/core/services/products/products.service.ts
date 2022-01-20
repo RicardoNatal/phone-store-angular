@@ -33,7 +33,6 @@ export class ProductsService {
     if (prod.id) {
       return this.http.patch(`${this.baseProductUrl}/${prod.id}`, prod);
     } else {
-      console.log('oi')
       return this.http.post(this.baseProductUrl, prod);
     }
   }

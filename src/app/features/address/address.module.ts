@@ -3,13 +3,8 @@ import { CommonModule } from '@angular/common';
 import { AddressComponent } from './address/address.component';
 import { FormsModule } from '@angular/forms';
 
-
-
 @NgModule({
   declarations: [AddressComponent],
-  imports: [
-    CommonModule,
-    FormsModule
-  ]
+  imports: [CommonModule, FormsModule],
 })
-export class AddressModule { }
+export class AddressModule {}

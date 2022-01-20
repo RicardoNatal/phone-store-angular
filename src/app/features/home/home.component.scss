@@ -16,13 +16,12 @@
   height: 750px;
   display: flex;
   justify-content: space-evenly;
-
 }
 
 .prod {
   width: 300px;
   height: 300px;
-  background-image: linear-gradient( to bottom, DodgerBlue, RoyalBlue );
+  background-image: linear-gradient(to bottom, DodgerBlue, RoyalBlue);
   border: 2px solid rgb(29, 64, 170);
   border-radius: 5px;
   margin-top: 12.7%;
@@ -32,26 +31,32 @@
 }
 
 .prod:hover {
-  background-image: linear-gradient( to bottom, rgb(40, 125, 209), rgb(29, 62, 160) );
+  background-image: linear-gradient(
+    to bottom,
+    rgb(40, 125, 209),
+    rgb(29, 62, 160)
+  );
 }
 
-.prod .imagem1, .prod .imagem2 {
+.prod .imagem1,
+.prod .imagem2 {
   width: 140px;
   height: 140px;
   margin-top: 50px;
 }
 
 .imagem1 {
-  background-image: url('https://files.tecnoblog.net/wp-content/uploads/2021/01/galaxy-s20-fe-produtos-2-700x700.png');
+  background-image: url("https://files.tecnoblog.net/wp-content/uploads/2021/01/galaxy-s20-fe-produtos-2-700x700.png");
   background-size: cover;
 }
 
 .imagem2 {
-  background-image: url('https://cdn-icons-png.flaticon.com/512/74/74472.png');
+  background-image: url("https://cdn-icons-png.flaticon.com/512/74/74472.png");
   background-size: cover;
 }
 
-.produto, .pessoa {
+.produto,
+.pessoa {
   width: 120px;
   height: 120px;
   font-size: 22px;
@@ -60,6 +65,7 @@
   color: white;
 }
 
-.imagem1, .imagem2 {
+.imagem1,
+.imagem2 {
   margin-left: 26%;
 }

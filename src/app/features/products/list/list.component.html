@@ -5,10 +5,11 @@
     </div>
     <div class="nome"><h1>Products</h1></div>
     <div class="cart"><button (click)="goToCart()">Carrinho</button></div>
-  </div><hr>
+  </div>
+  <hr />
   <div class="baixo">
     <div class="produto" *ngFor="let value of products">
-      <img class="imagem" [src]="value.imageUrl">
+      <img class="imagem" [src]="value.imageUrl" />
       <div class="specs">
         <div class="titles">
           <h3>{{ value.name }}</h3>

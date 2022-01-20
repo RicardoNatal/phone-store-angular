@@ -13,7 +13,7 @@
 .logo {
   width: 95%;
   height: 160px;
-  background-image: url('https://st3.depositphotos.com/3284149/19589/v/600/depositphotos_195897564-stock-illustration-mobile-phone-repair-logo-template.jpg');
+  background-image: url("https://st3.depositphotos.com/3284149/19589/v/600/depositphotos_195897564-stock-illustration-mobile-phone-repair-logo-template.jpg");
   background-size: cover;
   padding-bottom: 30px;
   margin: 5px;
@@ -24,14 +24,14 @@
   width: 95%;
   margin: 5px;
   height: 1.5px;
-  background-image: linear-gradient( to bottom, DodgerBlue, RoyalBlue );
+  background-image: linear-gradient(to bottom, DodgerBlue, RoyalBlue);
 }
 
 .opcao {
   width: 95%;
   text-align: center;
   height: 100px;
-  background-image: linear-gradient( to bottom, DodgerBlue, RoyalBlue );
+  background-image: linear-gradient(to bottom, DodgerBlue, RoyalBlue);
   margin: 5px;
   color: white;
   transition: all 1s;
@@ -39,7 +39,11 @@
 
 .opcao:hover {
   transition: all 0.3s;
-  background-image: linear-gradient( to bottom, rgb(40, 125, 209), rgb(29, 62, 160) );
+  background-image: linear-gradient(
+    to bottom,
+    rgb(40, 125, 209),
+    rgb(29, 62, 160)
+  );
 }
 
 .opcao h2 {

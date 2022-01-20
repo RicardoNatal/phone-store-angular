@@ -4,8 +4,7 @@ import { CommonModule } from '@angular/common';
 import { CartRoutingModule } from './cart-routing.module';
 import { FormsModule } from '@angular/forms';
 import { ListComponent } from './list/list.component';
-import { NgxViacepModule } from "@brunoc/ngx-viacep";
-
+import { NgxViacepModule } from '@brunoc/ngx-viacep';
 
 @NgModule({
   declarations: [ListComponent],

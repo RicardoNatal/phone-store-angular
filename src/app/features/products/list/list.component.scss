@@ -6,13 +6,15 @@
   text-align: center;
 }
 
-.cart, .add {
+.cart,
+.add {
   margin-top: 2%;
   width: 200px;
   height: 60px;
 }
 
-.cart button, .add button {
+.cart button,
+.add button {
   height: 45px;
   font-size: 16px;
   outline: 0;
@@ -22,7 +24,8 @@
   transition: all 0.3s;
 }
 
-.cart button:hover, .add button:hover {
+.cart button:hover,
+.add button:hover {
   transition: all 0.3s;
   box-shadow: 4px 4px 3px lightgray;
   background-color: rgb(45, 80, 184);
@@ -100,4 +103,3 @@
   color: white;
   box-shadow: 3px 3px 4px rgb(126, 140, 184);
 }
-

@@ -63,7 +63,10 @@
   width: 16%;
 }
 
-.formaPgto, .cep, .valorFinal, .terminarCompra {
+.formaPgto,
+.cep,
+.valorFinal,
+.terminarCompra {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,7 +210,7 @@
   outline: 0;
 }
 
-.baixo{
+.baixo {
   text-align: center;
 }
 

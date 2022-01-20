@@ -5,11 +5,10 @@ import { environment } from 'src/environments/environment';
 import { Subject } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PeopleService {
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   basePersonUrl = `${environment.baseUrl}/people`;
   private _people = new Subject<Person>();

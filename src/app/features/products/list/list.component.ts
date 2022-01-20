@@ -39,9 +39,9 @@ export class ListComponent implements OnInit {
   }
 
   addToCart(value: Product, price: string) {
-    this.cartService.addToCart(value)
-    this.cartService.values(Number(price))
-    this.snack.open("Produto adicionado ao carrinho", "OK")
+    this.cartService.addToCart(value);
+    this.cartService.values(Number(price));
+    this.snack.open('Produto adicionado ao carrinho', 'OK');
   }
 
   private setProducts(products) {

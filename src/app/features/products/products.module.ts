@@ -9,7 +9,12 @@ import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [FormComponent, ListComponent],
-  imports: [CommonModule, ProductsRoutingModule, ReactiveFormsModule, SharedModule],
+  imports: [
+    CommonModule,
+    ProductsRoutingModule,
+    ReactiveFormsModule,
+    SharedModule,
+  ],
   exports: [],
 })
 export class ProductsModule {}

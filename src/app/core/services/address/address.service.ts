@@ -2,17 +2,16 @@ import { Address } from './../../model/address';
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AddressService {
+  constructor() {}
 
-  constructor() { }
-
-  address: Address
+  address: Address;
 
   addAddress(address: Address) {
-    this.address = address
-  };
+    this.address = address;
+  }
 
   getAddress() {
     return this.address;
