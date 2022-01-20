@@ -91,6 +91,17 @@ export class ListComponent implements OnInit {
     return this.products;
   }
 
+
+  //          TERMINAR
+  // removerDaLista(id: number) {
+  //   this.productService.deleteProduct(id).subscribe((value) => {
+  //     this.productService
+  //       .allProducts()
+  //       .subscribe((entities) => this.setProducts(entities));
+  //     console.log(value);
+  //   });
+  // }
+
   finalizarCompra() {
     this.cartService.clearCart();
   }
