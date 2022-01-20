@@ -32,12 +32,15 @@ const routes: Routes = [
   {
     path: ':id',
     component: FormComponent,
-    resolve: {},
+    resolve: {
+      entity: PersonDataResolver
+    },
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
+  providers: [PersonDataResolver]
 })
 export class PeopleRoutingModule {}

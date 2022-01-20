@@ -24,8 +24,8 @@ export class FormComponent implements OnInit {
     );
 
     this.activatedRoute.data.subscribe((value) => {
-      if (value.product) {
-        this.formEntity.patchValue(value.product);
+      if (value.entity) {
+        this.formEntity.patchValue(value.entity);
       }
     });
   }

@@ -29,6 +29,11 @@ const routes: Routes = [
     component: FormComponent,
   },
   {
+    path: 'cart',
+    loadChildren: async () =>
+      import('./cart/cart.module').then((p) => p.CartModule),
+  },
+  {
     path: '**',
     component: PageNotFoundComponent
   },

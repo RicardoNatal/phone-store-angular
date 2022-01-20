@@ -4,17 +4,18 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  constructor(private router: Router) {}
 
-  constructor(private router: Router) { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  goToPeople() {
+    this.router.navigate(['people']);
   }
 
   goToProd() {
-    this.router.navigate(['products'])
+    this.router.navigate(['products']);
   }
-
 }

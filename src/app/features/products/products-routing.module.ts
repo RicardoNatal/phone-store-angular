@@ -3,15 +3,20 @@ import { ProductsService } from './../../core/services/products/products.service
 import { FormComponent } from './form/form.component';
 import { ListComponent } from './list/list.component';
 import { Injectable, NgModule } from '@angular/core';
-import { Routes, RouterModule, Resolve, ActivatedRouteSnapshot } from '@angular/router';
+import {
+  Routes,
+  RouterModule,
+  Resolve,
+  ActivatedRouteSnapshot,
+} from '@angular/router';
 import { Observable } from 'rxjs';
 
 @Injectable()
 export class ProductDataResolver implements Resolve<any> {
-  constructor(private ps: ProductsService){}
+  constructor(private ps: ProductsService) {}
 
   resolve(route: ActivatedRouteSnapshot): Observable<Product> {
-    return this.ps.getProductById(route.params.id)
+    return this.ps.getProductById(route.params.id);
   }
 }
 
@@ -22,20 +27,20 @@ const routes: Routes = [
   },
   {
     path: 'add',
-    component: FormComponent
+    component: FormComponent,
   },
   {
     path: ':id',
     component: FormComponent,
     resolve: {
-      product: ProductDataResolver
-    }
-  }
+      entity: ProductDataResolver,
+    },
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
-  providers: [ProductDataResolver]
+  providers: [ProductDataResolver],
 })
 export class ProductsRoutingModule {}

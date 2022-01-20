@@ -1,9 +1,26 @@
+<div class="total">
+  <div class="add">
+    <button (click)="goToAdd()">Adicionar cliente</button>
+  </div>
+  <div class="nome"><h1>PHONEFIX</h1></div>
+</div>
+<hr />
+<h1 id="pessoas">Pessoas:</h1>
 <div class="row">
   <div *ngFor="let person of people" class="card">
-    <h3 style="color: rgb(33, 76, 206); font-size: 25px;">{{ person.id }}</h3>
-    <p><strong>Nome: </strong>{{ person.name }}</p>
-    <p><strong>Idade: </strong> {{ person.age }}</p>
-    <p><strong>E-mail: </strong> {{ person.email }}</p>
-    <p><strong>Fone: </strong> {{ person.phone }}</p>
+    <div class="id">
+      <h3>{{ person.id }}</h3>
+    </div>
+    <div class="things">
+      <p><strong>Nome: </strong>{{ person.name }}</p>
+      <p><strong>Idade: </strong> {{ person.age }}</p>
+      <p><strong>E-mail: </strong> {{ person.email }}</p>
+      <p><strong>Fone: </strong> {{ person.phone }}</p>
+    </div>
+    <div class="botoes">
+      <button (click)="editPerson(person.id)">Edit</button>
+      <button (click)="deletePerson(person.id)">Delete</button>
+    </div>
   </div>
+  <div class="nada"></div>
 </div>

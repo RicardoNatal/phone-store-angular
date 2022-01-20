@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "desafio-angular"
+    }
+  },
+  "defaultProject": "desafio-angular",
+  "cli": {
+    "analytics": "45d02707-3c7c-44b0-99de-287b44fdf5ec"
+  }
 }

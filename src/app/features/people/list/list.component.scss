@@ -8,8 +8,8 @@
 }
 
 .card {
-  width: 300px;
-  height: 100%;
+  width: 294px;
+  height: 120%;
   text-align: center;
   border: 1px solid rgb(33, 76, 206);
   margin-top: 25px;
@@ -19,4 +19,100 @@ p {
   word-break: break-word;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.id {
+  width: 100%;
+  height: 65px;
+  background-color: rgb(33, 76, 206);
+  color: white;
+  margin-top: -30px;
+  text-align: center;
+  border: none;
+}
+
+.id h3 {
+  padding-top: 12px;
+  font-size: 29px;
+}
+
+#pessoas {
+  margin-left: 45.5%;
+  color: rgb(21, 45, 117);
+}
+
+.total {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 120px;
+}
+
+.add {
+  height: 100%;
+  width: 170px;
+}
+
+.add button {
+  margin-top: 39px;
+  width: 100%;
+  height: 45px;
+  font-size: 17px;
+  outline: 0;
+  background-color: rgb(255, 255, 255);
+  color: rgb(33, 76, 206);
+  border: 1px solid rgb(33, 76, 206);
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+
+.add button:hover {
+  transition: all 0.3s;
+  background-color: rgb(33, 76, 206);
+  color: white;
+  box-shadow: 7px 7px 10px lightgray;
+}
+
+.things {
+  height: 230px;
+}
+
+.nome {
+  height: 100%;
+  text-align: center;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.botoes button {
+  width: 120px;
+  font-size: 16px;
+  height: 35px;
+  outline: 0;
+  background-color: rgb(255, 255, 255);
+  color: rgb(33, 76, 206);
+  border: 1px solid rgb(33, 76, 206);
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+
+.botoes button:hover {
+  transition: all 0.3s;
+  background-color: rgb(33, 76, 206);
+  color: white;
+  box-shadow: 7px 7px 10px lightgray;
+}
+
+.nome h1 {
+  padding-top: 10.5px;
+  color: rgb(21, 45, 117);
+  font-size: 37px;
+}
+
+.nada {
+  height: 20px;
+  width: 100%;
 }

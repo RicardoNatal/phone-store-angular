@@ -4,7 +4,7 @@
       <button (click)="goToAdd()">Adicionar produto</button>
     </div>
     <div class="nome"><h1>PHONEFIX</h1></div>
-    <div class="cart"><button (click)="goToAdd()">Carrinho</button></div>
+    <div class="cart"><button (click)="goToCart()">Carrinho</button></div>
   </div>
   <div class="baixo">
     <div class="produto" *ngFor="let value of products">
@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="botoes">
-        <button>Buy</button><br />
+        <button (click)="addToCart(value, value.price)">Buy</button><br />
         <button (click)="editProduct(value.id)">Edit</button><br />
         <button (click)="deleteProduct(value.id)">Delete</button>
       </div>
